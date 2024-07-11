@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bikin Icon Ekstensi</title>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="skin.css">
+
+<link rel="icon" type="image/x-icon" href="icon.ico">
+
+</head>
+<body class="ada">
+<div class="ada">
+  <div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><a href="edit-ekstensi">Edit Ekstensi <b id='kecil'>(Ganti Domain)</b></a></li>
+      <li><a href="ganti-user-agent">Edit User Agent</a></li>
+      <li><a href="buat-ekstensi">Bikin Ekstensi <b id='kecil'>(Clone)</b></a></li>
+      
+    </ul>
+</div>
+</div>
+  <h2>Bikin Icon Untuk Ekstensi</h2>
+  <div class="ada">
+    <div class="tengah">
+      <b class="b">1.</b> Dapatkan gambar terlebih dahulu, untuk mendapatkannya, silahkan kunjungi web yang ingin dijadikan ekstensi, contoh Aquamanga<p>
+     
+
+      <b class="b">2.</b> Buka chrome lalu tambahkan text <span id="link">view-source:</span> di depan link sehingga menjadi <span id="link">view-source:https://aquamanga.org</span> akan terbuka banyak sekali kode sumber<p>
+
+      <img class="gambar" src="gambar/a.png"><p><br>
+
+     <b class="b">3.</b> Klik titik tiga pojok kanan atas lalu pilih Cari dihalaman<p>
+
+       <img class="gambar" src="gambar/b.png"><p>
+      
+       <b class="b">4.</b> Cari kata <span id="link">192x192.png</span> maka gambar icon akan ketemu, langsung klik aja tulisan 192x192 nya maka gambar akan terbuka<p>
+
+<b>OPTIONAL:</b> Ukuran gambarnya adalah 192x192, jika mau lebih besar ada juga yg ukuran 270x270 tapi gak bisa di klik, solusinya adalah klik dan tahan link 192x192 lalu klik Salin URL, lalu tempelkan di bar dan ubah 192x192 menjadi 270x270 lalu kunjungi dan simpan gambar<p>
+      
+       <img class="gambar" src="gambar/c.png"><p>
+       
+       <img class="gambar" src="gambar/d.png"><p>
+
+       <b class="b">5.</b> Kunjungi <a class="sit" href="https://as280093.github.io/AndroidAssetStudio/icons-launcher.html">Icon Generator</a>, jika sudah terbuka, silahkan klik bagian image dan pilih gambar yang sudah didapat tadi untuk dijadikan icon<p>
+
+       <img class="gambar" src="gambar/e.png"><p>
+       
+ Akan tampak seperti dibawah jika gambar sudah di upload, silahkan atur padding sesuka kalian dan background sesuka kalian<p>
+
+       <img class="gambar" src="gambar/f.png"><p>
+
+Jika semuanya sudah, silahkan donlod filenya yang berupa ZIP di pojok kanan atas<p>
+
+<img class="gambar" src="gambar/g.png"><p>
+<br>
+
+   <b class="link">6.</b> Download file <a class="sit"  href="http://tachiyomi.wap.sh/resources.arsc">resources.arsc</a></b> ini untuk mengganti yang ori, udah ane edit agar menyesuaikan nama folder karna yang ori gak bakal cocok dengan nama folder2 gambar yang kita bikin dari web tadi<p>
+
+Untuk mempermudah eksekusi, tambahkan saja file resources.arsc yang di donlod ke dalam file ZIP icon<p>
+
+<img class="gambar" src="gambar/h.png"><p>
+
+<img class="gambar" src="gambar/i.png"><p>
+
+Buka ekstensi yang ingin di ganti iconnya lalu buka folder <span id="link">res</span>, hapus semua isi dari foldernya, biarkan foldernya tetap kosong<p>
+
+  <img class="gambar" src="gambar/j.png"><p><br>
+
+lalu masukkan 5 folder iconnya ke dalam folder res yang ada di ekstensi<p>
+
+<img class="gambar" src="gambar/k.png"><p>
+
+<img class="gambar" src="gambar/l.png"><p>
+
+Dan yang terakhir, ganti file resource.arsc nya<p>
+
+<img class="gambar" src="gambar/m.png"><p>
+
+Selesai<p>
+
+<img class="gambar" src="gambar/n.png"><p><br>
+
+Hasilnya<p>
+
+<img class="gambar" src="gambar/o.png"><p>
+
+<img class="gambar" src="gambar/p.png"><p>
+       
+  <p>
+  <br>
+    </div>
+
+    <div class="icon">
+	  <img src="gambar/sup.jpg" alt="ikon facebook" />
+	  <a class="sup" href="fb://profile/100001893110585
+">Sup Kelelawar</a>
+</div>
+
+<div class="dana">
+<span class="text">Donasi seikhlasnya di: </span>
+     <a href="gambar/danasup.jpg">
+  <img src="gambar/dana.png"/>
+</a>     
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var links = document.querySelectorAll("a[href*='http://xtgem.com/click']");
+        links.forEach(function(link) {
+            link.style.display = 'none';
+        });
+    });
+</script>
+
+<script>
+
+function toggleNavbar() {
+  var navbarCollapse = document.getElementById("navbar-collapse");
+  if (navbarCollapse.style.display === "block") {
+    navbarCollapse.style.display = "none";
+  } else {
+    navbarCollapse.style.display = "block";
+  }
+}
+
+function closeNavbar() {
+  var navbarCollapse = document.getElementById("navbar-collapse");
+  navbarCollapse.style.display = "none";
+}
+
+window.addEventListener('resize', function() {
+  var windowWidth = window.innerWidth;
+  var navbarCollapse = document.getElementById("navbar-collapse");
+  
+  if (windowWidth > 768) {
+    navbarCollapse.style.display = "block";
+  } else {
+    navbarCollapse.style.display = "none";
+  }
+});
+
+// Menutup navbar ketika halaman diklik di area konten
+var content = document.querySelector('.content');
+content.addEventListener('click', closeNavbar);
+
+</script>
+</body>
+</html>
