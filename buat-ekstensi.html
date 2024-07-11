@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buat Ekstensi Sendiri (Di Clone)</title>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="skin.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<link rel="icon" type="image/x-icon" href="icon.ico">
+<style>
+ h3 { 
+  font-color: ocean; 
+} 
+
+  #sidebarMenu { 
+    margin-top: -36px;
+}
+</style>
+
+</head>
+<body>
+  
+  <div class="ada">
+  <div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><a href="edit-ekstensi">Edit Ekstensi <b id='kecil'>(Ganti Domain)</b></a></li>
+      <li><a href="edit-user-agent">Edit User Agent</a></li>
+      <li><a href="bikin-icon">Bikin Icon Ekstensi</a></li>
+      
+    </ul>
+</div>
+</div>
+
+<div class="ada">
+<div class="tengah">
+<h2>Buat Ekstensi Sendiri (Di Clone)</h2><br>
+
+
+Cara ini tidak bisa dibilang bikin, karna bikin harus pakai komputer atau Laptop<p>
+ 
+<b class="b">1. </b>Siapkan Ekstensi yang akan kita Clone, gw make <a id="link" href="https://raw.githubusercontent.com/tachiyomiorg/tachiyomi-extensions/repo/apk/tachiyomi-en.azurescans-v1.4.28.apk">Azure Scans</a> buat contoh, klik ekstensinya pilih 
+
+<span id="link">FUNGSI</span> dan pilih <span id="link">Klon APK</span> centang <span id="link">Gunakan metode kloning lama</span> lalu kilik <span id="link">OKE</span><p>
+
+<img src="gambar/a.jpg" width="305" height="480" alt=""/><p>
+
+Ekstensi sudah berhasil di clone, jangan install dulu<p>
+
+
+<img src="gambar/b.jpg" width="305" height="480" alt="" /><p><br>
+
+<b class="b"> </b>Edit file <span style="color: #008A7D;" class="sup">Classes.dex</span> dari ekstensi yang sudah di clone tadi  dan cari nama <span id="link">Azure Scans</span> dan ganti jadi <span id="link">Azure</span> saja, simpan dan pasang hasil cloning tadi<p>
+
+<img src="gambar/c.jpg" width="305" height="480" alt="" /><p>
+
+Nah sukses tuh kalau langkahnya bener<p>
+
+<img src="gambar/d.jpg" width="305" height="480" alt="" /><p>
+
+Bisa juga clone lebih dari satu, tapi syaratnya haruslah yang di clone itu Ekstensi yang sudah di clone, Ekstensi yang udah di clone, kita clone lagi, terus secara berurutan, misal ekstensi yg di clone ada tiga, kita clone yang ke tiga agar jadi clone yang ke empat, jangan yang ori di clone buat dijadikan ke empat, itu gak bakal work, di install pun gak bakal muncul di tachi, dan nama pun harus beda agar tidak bentrok<p>
+
+<img src="gambar/e.jpg" width="305" height="480" alt="" /><p>
+
+<img src="gambar/f.jpg" width="305" height="480" alt="" /><p>
+<p>
+
+Selesai, silahkan clone sebanyak mungkin kalo mau, tapi buat apa juga banyak2 :v<p>
+
+<b class="b">NOTE: </b> Ekstensi yg di clone gak bakal dapat update, karna nama package tidak ada dalam daftar Ekstensi di official, jadi kalau web yang kalian cari udah ada ekstensinya dari official ya pasang aja (kalau mau)
+
+<h2>Tahap Selanjutnya (Optional)</h2>
+
+Cara ini boleh dipakai kalau mau, tujuannya buat mengclone sampai ke akar2 nya (biar keren) 😎 <p><br>
+
+<b class="b">1. </b>Edit file <span style="color: #008A7D;" class="sup">Classes.dex</span> tapi yang ini bukan di Kolam Tali, tapi di Editor Dex Plus, ketika sudah di klik, akan terbuka di editor yang lebih detail dari Kolam Tali, tampilan pertama kita di perlihatkan dengan satu folder, klik foldernya dan akan terbuka folder lainnya, ada folder yang namanya <span id="link">extension</span> buka folder itu dan didalamnya ada folder lagi dengan <span id="link">en.azurescans </span>klik tahan folder itu lalu pilih <span id="link">Ganti nama</span><p>
+
+<img src="gambar/g.jpg" width="305" height="480" alt="" /><p>
+
+Ganti namanya dari azurescans atau azurescant (namanya akan beda tergantung cloningan keberapa yang di edit) jadi azure lalu klik ok, lihat gambar dibawah<p>
+
+<img src="gambar/h.jpg" width="305" height="480" alt="" /><p>
+ 
+<img src="gambar/i.jpg" width="305" height="480" alt="" /><p>
+
+<h3><b class="b">2. </b>Tolong langkah yang ini dibaca bener2</h3><p>
+
+
+Selanjutnya kita akan mengganti nama file yang warna biru, klik tahan file itu lalu Ganti Nama, perhatikan, ganti namanya menjadi <span id="link">Azure</span> dengan huruf A besar di depannya, jangan asal ganti nama nanti error, jadi urutannya harusnya <span id="link">en/azure/Azure</span><p>
+
+<img src="gambar/j.jpg" width="305" height="480" alt="" /><p>
+
+
+<b class="b">3. </b>Selanjutnya kita buka file Azure yang berwarna biru, akan ada banyak kode, tujuan kita untuk mengganti nama <span id="link">AzureScans.kt</span> menjadi <span id="link">Azure.kt</span> agar sama namanya dengan nama file biru, ingat, besar kecilnya huruf gak boleh beda<p>
+
+Selanjutnya kita aka membersihkan nama azurescans, geser ke kekanan ke bagian pencarian lalu cari kata azurescans dan cari, akan ketemu 13 biji<p>
+
+<img src="gambar/azure1.jpg" width="305" height="480" alt="" /><p>
+
+<img src="gambar/azure2.jpg" width="305" height="480" alt="" /><p>
+
+Klik <span id="link">Ganti dalam hasil saat ini</span>, ada dibagian atas, klik aja, lalu ikuti seperti gambar dibawah, kalu dibagian ini, besar kecilnya huruf gak masalah, ganti dengan nama kalian juga gpp<p>
+
+<img src="gambar/azure3.jpg" width="305" height="480" alt="" /><p>
+
+<img src="gambar/azure4.jpg" width="305" height="480" alt="" /><p>
+
+Lalu klik <span id="link">Mulai pencarian baru</span> dan masukkan azurescan tanpa huruf terakhir, huruf terakhir bisa saja huruf S, T, U, V, W, tergantung cloning keberapa yang di edit, jadi jangan masukkan huruf terakhirnya, cukup azurescan  saja<p>
+
+<img src="gambar/azure5.jpg" width="305" height="480" alt="" /><p>
+
+Ketemu tuh, ganti <span id="link">en.azurescan</span>  beserta huruf belakangnya menjadi <span id="link">en.azure</span> lihat gambar dibawah cara penulisanya<p>
+
+<img src="gambar/azure6.jpg" width="305" height="480" alt="" /><p>
+
+<img src="gambar/azure7.jpg" width="305" height="480" alt="" /><p>
+
+Ok itu yang terakhir di file Dex ini, keluar dan simpan, file dex sudah gak ada lagi yang harus di ubah<p><br>
+
+<b class="b">3. </b> tujuan kita selanjutnya adalah file <span id="link">AndroidManifest.xml</span> untuk membuka file ini, haruslah dengan metode <span id="link">Dekompilasi</span>, untuk melakukannya, haruslah terhubung dengan koneksi internet dan kalian wajib daftar akun, daftar asal aja asalkan terdaftar, jika sudah semua, klik filenya lalu pilih <span id="link">Dekompilasi</span>, tunggu sampai terbuka, kalau sudah terbuka, ubah bagian seperti gambar dibawah yang awalnya <span id="link">en.azurescan</span> jadi <span id="link">en.azure</span>  hurufnya harus kecil<p> 
+
+<img src="gambar/m.jpg" width="305" height="480" alt="" /><p>
+
+Ubah juga bagian <span id="link">Tachiyomi: Azure Scans</span> menjadi.... terserah kalian.<p>
+
+<img src="gambar/n.jpg" width="305" height="480" alt="" /><p><br>
+
+Ubah bagian <span id="link">.AzureScans</span> menjadi <span id="link">.Azure</span>, perhatikan, ada titik didepan kata Azure, itu gak boleh diganti dan huruf depannya haruslah besar agar sama dengan file biru di file dex dan <span id="link">Azure.kt</span>, jadi jangan hilangkan titiknya.<p>
+
+
+<img src="gambar/o.jpg" width="305" height="480" alt="" /><p>
+
+Ok selelesai, akhirnya jadi ekstensi 98% mirip official :v<p>
+
+Ok tutor selesai, Selamat berbongkar bongkar.<p><br>
+
+
+
+ <div class="icon">
+	  <img src="gambar/sup.jpg" alt="ikon facebook" />
+	  <a class="sup" href="fb://profile/100001893110585
+">Sup Kelelawar</a>
+</div>
+
+<div class="dana">
+<span class="text">Donasi seikhlasnya di: </span>
+     <a href="gambar/danasup.jpg">
+  <img src="gambar/dana.png"/>
+</a>     
+    </div>
+</div>
+
+<center><p class="jarak"><span style="color: red; font-size: 18px;" class="sup">PERINGATAN!!!!! &nbsp; </span></p>
+
+ <span style="color:#ffa500;"><p><p>
+Jangan mencari untung dengan memendekkan URL biar cuan, apa lagi menjual dengan meminta pulsa atau semacamnya, pihak Tachiyomi ngasih kita ni app free tanpa biaya, tanpa iklan, kalau dari sana free, kita juga harus free, mohon pengertiannya<xt:code></span><p>
+
+<span style="color: #008ad3;" class="sup">TERIMA KASIH</span><p><p></center>
+</div>
+
+<script>
+let prevScrollPos = window.pageYOffset;
+let navbar = document.getElementById("navbar");
+let isVisible = true;
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  
+  if (prevScrollPos > currentScrollPos) {
+    // Scroll ke atas
+    if (!isVisible) {
+      navbar.style.display = "block";
+      isVisible = true;
+    }
+  } else {
+    // Scroll ke bawah
+    if (isVisible) {
+      navbar.style.display = "none";
+      isVisible = false;
+    }
+  }
+  prevScrollPos = currentScrollPos;
+}
+
+function toggleNavbar() {
+  var navbarCollapse = document.getElementById("navbar-collapse");
+  if (navbarCollapse.style.display === "block") {
+    navbarCollapse.style.display = "none";
+  } else {
+    navbarCollapse.style.display = "block";
+  }
+}
+
+function closeNavbar() {
+  var navbarCollapse = document.getElementById("navbar-collapse");
+  navbarCollapse.style.display = "none";
+}
+
+window.addEventListener('resize', function() {
+  var windowWidth = window.innerWidth;
+  var navbarCollapse = document.getElementById("navbar-collapse");
+  
+  if (windowWidth > 768) {
+    navbarCollapse.style.display = "block";
+  } else {
+    navbarCollapse.style.display = "none";
+  }
+});
+
+// Menutup navbar ketika halaman diklik di area konten
+var content = document.querySelector('.content');
+content.addEventListener('click', closeNavbar);
+</script>
+
+</body>
+</html>
