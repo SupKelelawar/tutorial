@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit User-Agent Tachiyomi</title>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="skin.css">
+
+<link rel="icon" type="image/x-icon" href="/icon.ico">
+
+</head>
+<body>
+
+  <div class="ada">
+  <div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><a href="http://tachiyomi.wap.sh/edit-ekstensi">Edit Ekstensi <b id='kecil'>(Ganti Domain)</b></a></li>
+      <li><a href="http://tachiyomi.wap.sh/edit-user-agent">Edit User Agent</a></li>
+      <li><a href="http://tachiyomi.wap.sh/buat-ekstensi">Bikin Ekstensi <b id='kecil'>(Clone)</b></a></li>
+      
+    </ul>
+</div>
+</div>
+
+  <h2>Ganti User-Agent Di Tachiyomi</h2>
+  <div class="ada">
+    <div class="tengah">
+      <b class="b">1.</b> Buka <a id="link2" href="http://tachiyomi.wap.sh/ua" target="_blank">Deteksi String</a>, gw saranin buka pakai Chrome</p>
+
+      <b class="b">2.</b> Setelah terbuka, klik tombol Salin<p>
+
+      <img class="gambar" src="gambar/ua.png"><p>
+
+      <b class="b">3.</b> Jika sudah disalin, buka tachiyomi dan pergi ke: <span class="sit">Pengaturan --> Lanjutan/Advanced --> Default User Agent String/Agen Pengguna</span>, dan kemudian ganti string yang ada dengan string yang baru saja disalin dan klik ok<p>
+
+      <img class="gambar" src="gambar/ua1.png"><p>
+
+      <b class="b">4.</b> Lihat gambar dibawah, ada notif yang artinya kurang lebih <span class="sit">"Mulai ulang aplikasi untuk mengetahui efeknya"</span><p>
+
+      <img class="gambar" src="gambar/c.png"><p>
+
+      <b class="b">5.</b> Mulai ulang aplikasi dengan cara keluar dari aplikasi Tachiyomi atau <span class="sit">Paksa Berhenti</span> juga boleh seperti gambar dibawah kalau keluar seperti biasa gak ngefek<p> 
+
+      <img class="gambar" src="gambar/dd.png"><p>
+
+      <b class="b">6.</b> Buka lagi apk Tachiyomi dan lakukan seperti point nomor <b class="b">3</b>, jika seperti gambar di bawah, itu menandakan <span class="sit">User-Agent</span> sudah berhasil diterapkan<p>
+
+      <img class="gambar" src="gambar/ee.png"><p>
+    </div>
+
+    <div class="icon">
+	  <img src="gambar/sup.jpg" alt="ikon facebook" />
+	  <a class="sup" href="fb://profile/100001893110585
+">Sup Kelelawar</a>
+</div>
+
+<div class="dana">
+<span class="text">Donasi seikhlasnya di: </span>
+     <a href="gambar/danasup.jpg">
+  <img src="gambar/dana.png"/>
+</a>     
+    </div>
+</div>
+
+<center>
+<p>
+<br>
+
+<span style="color:red; font-size: 18px;" class="sup">SELAMAT</span><p>
+
+    <span style="color:#ffa500; font-size: 17px;">Anda berhasil mengganti <span style="color: yellow;">User-Agent</span> untuk Tachiyomi</span><p><br>
+  </div>
+<script>
+
+function toggleNavbar() {
+  var navbarCollapse = document.getElementById("navbar-collapse");
+  if (navbarCollapse.style.display === "block") {
+    navbarCollapse.style.display = "none";
+  } else {
+    navbarCollapse.style.display = "block";
+  }
+}
+
+function closeNavbar() {
+  var navbarCollapse = document.getElementById("navbar-collapse");
+  navbarCollapse.style.display = "none";
+}
+
+window.addEventListener('resize', function() {
+  var windowWidth = window.innerWidth;
+  var navbarCollapse = document.getElementById("navbar-collapse");
+  
+  if (windowWidth > 768) {
+    navbarCollapse.style.display = "block";
+  } else {
+    navbarCollapse.style.display = "none";
+  }
+});
+
+// Menutup navbar ketika halaman diklik di area konten
+var content = document.querySelector('.content');
+content.addEventListener('click', closeNavbar);
+
+</script>
+</body>
+</html>
