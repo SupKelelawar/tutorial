@@ -301,7 +301,7 @@
     position: fixed;
     left: 0;
     width: 220px;
-    margin-top: -6px;
+    margin-top: 0px;
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
     background: #333;
